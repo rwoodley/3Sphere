@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+</title><meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: Monospace;
+				background-color: #000;
+				margin: 0px;
+				overflow: hidden;
+			}
+            /* We are using dat.gui for the gui controls. They didn't have support for multi-line text input, e.g. textarea.
+                So I edited dat.gui.js to add a textarea for string input. These extra styles are needed to support
+                OpenControls/CloseControls. */
+            .closed li { display: none; }
+            .closed div span { display: none; }
+            .closed textarea { display: none; }
+		</style>
+
+        <script src="./r78/three.min.r78.js"></script>
+        <script src="./r78/OrbitControls.js"></script>
+        <!-- <script src="./r78/stats.js"></script> -->
+        <script src="./3rdParty/math.min.3.2.1.js"></script>
+        <script src="./r78/Detector.js"></script>
+		<script type="text/javascript" src="./3rdParty/dat.gui.js"></script>
+    <link rel='stylesheet'   href='dg.css' type='text/css' media='all' />
+		<script src="./js/utilities.js"></script>
+		<script src="./js/guiStuff.js"></script>
+		<script src="./js/params.js"></script>
+
+        <!-- ======================= -->
+        <script src="./js/recording.js"></script>
+        <script src="3rdParty/CCapture.min.js"></script>
+        <script src="3rdParty/CubemapToEquirectangular.js"></script>
+        <script src="3rdParty/Whammy.js"></script>
+        <script src="3rdParty/download.js"></script>
+        <!-- ======================= -->
+    </head>
+	<body>
+
+
+        <div style="position: fixed; bottom: 0; width:95%; ">
+            <div style="float: right; ">
+                 <!-- <span style="display:block;height:30px;color:white;"><nobr>Use mouse to rotate/pan/zoom.</nobr></span> -->
+                 <span style="display:block;height:30px;color:white;">Copyright (c) <nobr><a href="http://rwoodley.org/" style="color:#0000ff;" target="_blank">Robert Woodley</a> 2014-2017</nobr></span>
+            </div>
+        </div>
+		<script src="./js/Main.js"></script>
+	
+</body></html>
